@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case 03</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        div {
+            position: absolute;
+            width: 10vw;
+            aspect-ratio: 2/1;
+            background-color: #ff253a;
+            animation: position 4s infinite alternate ease-in-out;
+        }
+
+        @keyframes position {
+            0% {
+                transform: translate(0, 0) rotate(360deg);
+            }
+            25% {
+                transform: translate(80vw, 0) rotate(-360deg);
+                background-color: darkblue;
+            }
+            50% {
+                transform: translate(80vw, 80vh) rotate(360deg);
+                background-color: deepskyblue;
+            }
+            75% {
+                transform: translate(0, 80vh) rotate(-360deg);
+                background-color: hotpink;
+            }
+            100% {
+                transform: translate(0, 0) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
